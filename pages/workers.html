@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Dashboard | NaijaFix</title>
+    <link rel="stylesheet" href="worker.css">
+</head>
+<body>
+
+    <div class="worker-dashboard">
+
+        <aside class="sidebar">
+            <a href="../index.html" class="logo">Naija<span>Fix</span></a>
+
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#my-tasks">My Tasks</a>
+                <a href="#profile">Profile</a>
+            </nav>
+
+            <a href="../index.html" class="logout">Logout</a>
+        </aside>
+
+        <main class="main-content" id="dashboard">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>Worker Dashboard</h1>
+                    <p>Welcome back! Here are your assigned tasks.</p>
+                </div>
+            </header>
+
+            <section class="stats-container">
+                <article class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <p>8</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Pending</h3>
+                    <p>3</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>In Progress</h3>
+                    <p>2</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Completed</h3>
+                    <p>3</p>
+                </article>
+            </section>
+
+            <section class="recent-reports" id="my-tasks">
+                <h2>My Assigned Tasks</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue</th>
+                            <th>Location</th>
+                            <th>Date Assigned</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Bad Road</td>
+                            <td>Ikeja</td>
+                            <td>25 Oct 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Waste Disposal</td>
+                            <td>Mushin</td>
+                            <td>26 Oct 2026</td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Faulty Streetlight</td>
+                            <td>Oshodi</td>
+                            <td>27 Oct 2026</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="profile-section" id="profile">
+                <h2>My Profile</h2>
+                <p>View your worker account information.</p>
+
+                <div class="profile-details">
+                    <div class="profile-item">
+                        <h4>Full Name</h4>
+                        <p>Sanusi</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h4>Phone Number</h4>
+                        <p>08048858585</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h4>Assigned Area</h4>
+                        <p>Mushin</p>
+                    </div>
+
+                    <div class="profile-item">
+                        <h4>Account Type</h4>
+                        <p>Community Worker</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

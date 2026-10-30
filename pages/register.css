@@ -1,0 +1,115 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7faf8;
+    color: #202b25;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* REGISTER CONTAINER */
+.register-container {
+    width: 450px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e4ebe6;
+    box-shadow: 0 10px 30px rgba(20, 70, 42, 0.08);
+}
+
+/* HEADER */
+.register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #176b45;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    color: #32a66a;
+}
+
+.register-header h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.register-header p {
+    color: #637068;
+    font-size: 14px;
+}
+
+/* FORM */
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 7px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdd8d0;
+    border-radius: 6px;
+    font: inherit;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #26945b;
+    box-shadow: 0 0 0 3px rgba(38, 148, 91, 0.12);
+}
+
+form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    background-color: #176b45;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #125437;
+}
+
+/* LINKS */
+.login-link {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.login-link a,
+.back-home {
+    color: #176b45;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}

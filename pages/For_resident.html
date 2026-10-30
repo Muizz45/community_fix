@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Dashboard | NaijaFix</title>
+    <link rel="stylesheet" href="For_resident.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="../index.html" class="logo">
+                Naija<span>Fix</span>
+            </a>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#my-reports">My Reports</a>
+                <a href="#submit-report">Submit a Report</a>
+                <a href="#profile">Profile</a>
+            </nav>
+
+            <a href="../index.html" class="logout">Logout</a>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>Resident Dashboard</h1>
+                    <p>Welcome back! Here's an overview of your reports.</p>
+                </div>
+
+                <a href="#submit-report" class="btn">+ New Report</a>
+            </header>
+
+            <!-- STATISTICS -->
+            <section class="stats-container">
+
+                <article class="stat-card">
+                    <h3>Total Reports</h3>
+                    <p>12</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Pending</h3>
+                    <p>4</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>In Progress</h3>
+                    <p>5</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Resolved</h3>
+                    <p>3</p>
+                </article>
+
+            </section>
+
+            <!-- RECENT REPORTS -->
+            <section class="recent-reports" id="my-reports">
+
+                <h2>Recent Reports</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue</th>
+                            <th>Picture</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reports-list">
+                        <tr>
+                            <td>Bad Road</td>
+                            <td> <img src="../images/bad-road.jpeg" alt="Bad Road" width="80"></td>
+                            <td>Mushin</td>
+                            <td>20 Oct 2026</td>
+                            <td>Bad</td>
+                        </tr>
+
+                        <tr>
+                            <td>Faulty Streetlight</td>
+                            <td> <img src="../images/streetlight.jpg" alt="Faulty Streetlight" width="80"></td>
+                            <td>Oshodi</td>
+                            <td>22 Oct 2026</td>
+                            <td>In Progress</td>
+                        </tr>
+
+                        <tr>
+                            <td>Waste Disposal</td>
+                            <td> <img src="../images/images (1).jpg" alt="Waste Disposal" width="80"></td>
+                            <td>Surulere</td>
+                            <td>24 Oct 2026</td>
+                            <td>Resolved</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            
+<section class="resident-report" id="submit-report">
+    <h2>Submit a New Report</h2>
+    <p>Report an issue in your neighbourhood.</p>
+
+    <form id="resident-report-form">
+
+        <label for="issue-title">Issue Title</label>
+        <input type="text" id="issue-title"
+            placeholder="e.g. Damaged Road" required>
+
+        <label for="issue-category">Issue Category</label>
+        <select id="issue-category" required>
+            <option value="">Select a category</option>
+            <option value="Road">Road Damage</option>
+            <option value="Electricity">Streetlight</option>
+            <option value="Waste">Waste Disposal</option>
+            <option value="Water">Water Supply</option>
+            <option value="Other">Others</option>
+        </select>
+
+        <label for="issue-location">Location</label>
+        <input type="text" id="issue-location"
+            placeholder="Enter the location" required>
+
+        <label for="issue-description">Description</label>
+        <textarea id="issue-description"
+            placeholder="Describe the issue..."
+            rows="5" required></textarea>
+            <label for="issue-image">Upload Picture (Optional)</label>
+<input type="file"
+    id="issue-image"
+    accept="image/*">
+    <img id="image-preview" 
+     src="" 
+     alt="Image Preview"
+     style="display: none; width: 200px; margin-top: 10px; border-radius: 8px;">
+
+        <button type="submit" class="btn">Submit Report</button>
+
+    </form>
+</section>
+    
+<section class="profile-section" id="profile">
+    <h2>My Profile</h2>
+    <p>View your personal account information.</p>
+
+    <div class="profile-details">
+
+        <div class="profile-item">
+            <h4>Full Name</h4>
+            <p>Balogun Muizz</p>
+        </div>
+
+        <div class="profile-item">
+            <h4>Email Address</h4>
+            <p>Muizz343.com</p>
+        </div>
+
+        <div class="profile-item">
+            <h4>Phone Number</h4>
+            <p>0802444444444</p>
+        </div>
+
+        <div class="profile-item">
+            <h4>Account Type</h4>
+            <p>Resident</p>
+        </div>
+
+    </div>
+</section>
+
+        </main>
+
+    </div>
+<script src="../script.js"></script>
+</body>
+</html>

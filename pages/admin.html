@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | NaijaFix</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="../index.html" class="logo">
+                Naija<span>Fix</span>
+            </a>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#all-reports">All Reports</a>
+                <a href="#residents">Residents</a>
+                <a href="#workers">Workers</a>
+                <a href="#assignments">Assignments</a>
+            </nav>
+
+            <a href="../index.html" class="logout">Logout</a>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>Admin Dashboard</h1>
+                    <p>Manage community issues and activities.</p>
+                </div>
+            </header>
+
+            <!-- STATISTICS -->
+            <section class="stats-container">
+
+                <article class="stat-card">
+                    <h3>Total Reports</h3>
+                    <p>120</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Pending Reports</h3>
+                    <p>35</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>In Progress</h3>
+                    <p>50</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>Resolved</h3>
+                    <p>35</p>
+                </article>
+
+            </section>
+
+            <!-- RECENT REPORTS -->
+            <section class="recent-reports" id="all-reports">
+
+                <h2>Recent Community Reports</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue</th>
+                            <th>Location</th>
+                            <th>Resident</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Bad Road</td>
+                            <td>Mushin</td>
+                            <td>Muizz</td>
+                            <td>20 Oct 2026</td>
+                            <td>Bad</td>
+                        </tr>
+
+                        <tr>
+                            <td>Faulty Streetlight</td>
+                            <td>Oshodi</td>
+                            <td>Isaac</td>
+                            <td>22 Oct 2026</td>
+                            <td>In Progress</td>
+                        </tr>
+
+                        <tr>
+                            <td>Waste Disposal</td>
+                            <td>Surulere</td>
+                            <td>Habib</td>
+                            <td>24 Oct 2026</td>
+                            <td>Resolved</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <section class="recent-reports" id="residents">
+    <h2>Registered Residents</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email Address</th>
+                <th>Phone Number</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Muizz</td>
+                <td>muizz@email.com</td>
+                <td>084594494949</td>
+                <td>Mushin</td>
+            </tr>
+
+            <tr>
+                <td>Isaac</td>
+                <td>isaac@email.com</td>
+                <td>08044544443</td>
+                <td>Oshodi</td>
+            </tr>
+
+            <tr>
+                <td>David</td>
+                <td>david@email.com</td>
+                <td>0812344444</td>
+                <td>Surulere</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="recent-reports" id="workers">
+    <h2>Community Workers</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+                <th>Assigned Area</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sanusi</td>
+                <td>08012345678</td>
+                <td>Ogun State</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>Quadri</td>
+                <td>08098765432</td>
+                <td>Ibadan</td>
+                <td>Busy</td>
+            </tr>
+
+            <tr>
+                <td>Ezenwa</td>
+                <td>08123456789</td>
+                <td>Anambra</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="recent-reports" id="assignments">
+    <h2>Worker Assignments</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Issue</th>
+                <th>Location</th>
+                <th>Assigned Worker</th>
+                <th>Assigned Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bad Road</td>
+                <td>Ikeja</td>
+                <td>Sanusi</td>
+                <td>25 Oct 2026</td>
+                <td><span class="status Resolved">Resolved</span></td>
+            </tr>
+
+            <tr>
+                <td>Waste Disposal</td>
+                <td>Lagos</td>
+                <td>Quadri</td>
+                <td>26 Oct 2026</td>
+                <td><span class="status in-progress">In Progress</span></td>
+            </tr>
+
+            <tr>
+                <td>Faulty Streetlight</td>
+                <td>Oshodi</td>
+                <td>Ezenwa</td>
+                <td>27 Oct 2026</td>
+                <td><span class="status pending">Pending</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    
+<div class="assignment-form">
+    <h2>Assign a Worker</h2>
+    <p>Select a reported issue and assign a worker to handle it.</p>
+
+    <form>
+        <label for="report">Select Report</label>
+        <select id="report" required>
+            <option value="">Choose a reported issue</option>
+            <option value="Bad Road - Ikeja">Bad Road - Ikeja</option>
+            <option value="Waste Disposal - Ojota">Waste Disposal - Ojota</option>
+            <option value="Faulty Streetlight - Maryland">Faulty Streetlight - Maryland</option>
+        </select>
+
+        <label for="worker">Select Worker</label>
+        <select id="worker" required>
+            <option value="">Choose a worker</option>
+            <option value="Sanusi">Sanusi</option>
+            <option value="Quadri">Quadri</option>
+            <option value="Ezenwa">Ezenwa</option>
+        </select>
+
+        <button type="submit">Assign Worker</button>
+    </form>
+</div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

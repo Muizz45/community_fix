@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaFix Community Issues</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Naija<span>Fix</span></a>
+            
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#issues">Issues</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/register.html">Register</a></li>
+                <li><a href="pages/For_resident.html">Resident Dashboard</a></li>
+            </ul>
+
+            <a href="#report" class="btn">Report an Issue</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">BETTER COMMUNITIES START HERE</p>
+                <h1>See a problem?<br>Let's <span>fix it.</span></h1>
+
+                <p>
+                    Report potholes, faulty streetlights, waste problems,
+                    and other issues in your neighbourhood.
+                </p>
+
+               <div class="hero-actions">
+    <a href="pages/register.html" class="btn">Get Started</a>
+
+    <div class="staff-login">
+        <a href="pages/admin.html">Admin Login</a>
+        <a href="pages/workers.html">Worker Login</a>
+    </div>
+</div>
+
+        </section>
+
+        <section class="issues" id="issues">
+            <h2>Common Community Issues</h2>
+
+            <div class="issue-grid">
+                <article class="issue-card">
+                    <img src="./images/bad-road.jpeg" alt="">
+                    <h3>🛣️ Bad Roads</h3>
+                    <p>Report potholes and damaged roads.</p>
+                </article>
+
+                <article class="issue-card">
+                    <img src="./images/streetlight.jpg" alt="">
+                    <h3>💡 Streetlights</h3>
+                    <p>Report faulty streetlights.</p>
+                </article>
+
+                <article class="issue-card">
+                    <img src="./images/images (1).jpg" alt="">
+                    <h3>🗑️ Waste</h3>
+                    <p>Report waste disposal problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+    <h2>How NaijaFix Works</h2>
+    <p class="section-description">
+        Helping residents make their communities better in three simple steps.
+    </p>
+
+    <div class="steps-container">
+
+        <article class="step-card">
+            <h3>01. Report an Issue</h3>
+            <p>
+                Identify a problem in your neighbourhood and submit
+                a report with its location and description.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <h3>02. Track Progress</h3>
+            <p>
+                Follow your report and see when community officers
+                review and assign the issue.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <h3>03. Get It Resolved</h3>
+            <p>
+                Workers attend to assigned issues and update their
+                progress until the problem is resolved.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+        <!-- <section class="report-section" id="report">
+            <h2>Report an Issue</h2>
+
+            <form id="report-form">
+                <label for="title">Issue title</label>
+                <input type="text" id="title" required>
+
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="">Choose a category</option>
+                    <option value="Roads">Bad Roads</option>
+                    <option value="Streetlights">Streetlights</option>
+                    <option value="Waste">Waste Management</option>
+                    <option value="Water">Water Supply</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter your street or area" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Submit Report</button>
+                <p id="form-message" aria-live="polite"></p>
+            </form>
+        </section> -->
+        <section class="report-section" id="report">
+
+    <div class="report-intro">
+        <p class="eyebrow">MAKE YOUR COMMUNITY BETTER</p>
+        <h2>Report a Community Issue</h2>
+        <p>
+            See something that needs attention in your neighbourhood?
+            Let us know. Submit a report and help make your community
+            a better place for everyone.
+        </p>
+    </div>
+
+    <form id="report-form">
+        <label for="title">Issue title</label>
+        <input type="text" id="title" required>
+
+        <label for="category">Category</label>
+        <select id="category" required>
+            <option value="">Choose a category</option>
+            <option value="Roads">Bad Roads</option>
+            <option value="Streetlights">Streetlights</option>
+            <option value="Waste">Waste Management</option>
+            <option value="Water">Water Supply</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input type="text" id="location"
+            placeholder="Enter your street or area" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Submit Report</button>
+        <p id="form-message" aria-live="polite"></p>
+    </form>
+
+</section>
+
+    </main>
+
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <a href="#home" class="logo">Naija<span>Fix</span></a>
+            <p>Working together for cleaner, safer and better communities.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#issues">Issues</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#report">Report an Issue</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 NaijaFix. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</div>
+</body>
+</html>
