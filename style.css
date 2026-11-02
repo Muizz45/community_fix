@@ -373,22 +373,32 @@ a {
 }
 
 /* RESPONSIVE DESIGN */
-/* @media (max-width: 800px) {
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET VIEW */
+@media (max-width: 800px) {
+
     .header {
-        padding: 18px 5%;
+        padding: 16px 5%;
     }
 
     .navbar {
         flex-wrap: wrap;
+        gap: 18px;
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 16px;
         flex-wrap: wrap;
     }
 
     .hero {
         padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
     }
 
     .issues,
@@ -397,33 +407,88 @@ a {
         padding: 55px 7%;
     }
 
-    .issue-grid {
+    .issue-grid,
+    .steps-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .report-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #report-form {
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 40px 7% 20px;
+    }
+
 }
 
+/* MOBILE VIEW */
 @media (max-width: 550px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
     .navbar {
-        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
     }
 
     .nav-links {
-        justify-content: center;
         width: 100%;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
     }
 
     .navbar > .btn {
-        margin: 0 auto;
-    }
-
-    .issue-grid {
-        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
     }
 
     .hero {
         min-height: auto;
-        padding-top: 55px;
-        padding-bottom: 55px;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-content > p:not(.eyebrow) {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .staff-login {
+        flex-direction: column;
+    }
+
+    .staff-login a {
+        text-align: center;
+    }
+
+    .issues,
+    .how-it-works,
+    .report-section {
+        padding: 45px 6%;
     }
 
     .issues h2,
@@ -432,7 +497,126 @@ a {
         font-size: 25px;
     }
 
+    .issue-grid,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .issue-card {
+        padding: 25px 20px;
+    }
+
+    .issue-card img {
+        height: 190px;
+    }
+
+    .report-intro h2 {
+        font-size: 29px;
+    }
+
     #report-form {
         padding: 20px;
     }
-} */
+
+    #report-form button {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 35px 6% 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+}
+
+/* HAMBURGER MENU */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #176b45;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 550px) {
+
+    .navbar {
+        position: relative;
+        align-items: stretch;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+        border-top: 1px solid #e5ebe7;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}
+
+/* HAMBURGER MENU */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #176b45;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 550px) {
+
+    .navbar {
+        position: relative;
+        align-items: stretch;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+        border-top: 1px solid #e5ebe7;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}
