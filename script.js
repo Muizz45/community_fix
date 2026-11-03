@@ -127,42 +127,72 @@ if (reportForm) {
     });
 }
 
+
+
 // MOBILE NAVIGATION
 
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links, .sidebar-nav");
 
-menuToggle.addEventListener("click", function () {
+if (menuToggle && navLinks) {
 
-    navLinks.classList.toggle("active");
+    menuToggle.addEventListener("click", function () {
 
-    const isOpen = navLinks.classList.contains("active");
+        navLinks.classList.toggle("active");
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
+        const isOpen = navLinks.classList.contains("active");
 
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
+        menuToggle.setAttribute("aria-expanded", isOpen);
 
-    menuToggle.textContent = isOpen ? "✕" : "☰";
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
 
-});
-
-// Close menu after clicking a navigation link
-
-navLinks.querySelectorAll("a").forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        navLinks.classList.remove("active");
-
-        menuToggle.setAttribute("aria-expanded", "false");
-
-        menuToggle.setAttribute("aria-label", "Open navigation menu");
-
-        menuToggle.textContent = "☰";
+        menuToggle.textContent = isOpen ? "✕" : "☰";
 
     });
 
-});
+    navLinks.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+
+}
+
+
+    // Close menu after clicking a navigation link
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+

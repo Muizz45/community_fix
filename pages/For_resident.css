@@ -22,6 +22,7 @@ a {
 .dashboard {
     display: flex;
     min-height: 100vh;
+    
 }
 /* SIDEBAR */
 
@@ -32,6 +33,9 @@ a {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+     position:sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -90,6 +94,7 @@ a {
 
 .dashboard-header p {
     color: #637068;
+    
 }
 
 .btn {
@@ -260,4 +265,176 @@ td {
     font-size: 16px;
     font-weight: bold;
     color: #202b25;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    /* Dashboard layout */
+    .dashboard {
+        flex-direction: column;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+    .sidebar:has(.sidebar-nav.active) {
+    min-height: 100vh;
+}
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .logout {
+        margin-top: 15px;
+    }
+
+    /* Main content */
+    .main-content {
+        padding: 20px;
+    }
+    /* Statistics */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+
+    .stat-card p {
+        font-size: 25px;
+    }
+        /* Recent Reports */
+    .recent-reports {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+        /* Resident Report Form */
+    .resident-report {
+        padding: 20px;
+    }
+
+    .resident-report h2 {
+        font-size: 20px;
+    }
+
+    #resident-report-form {
+        max-width: 100%;
+    }
+
+    #resident-report-form input,
+    #resident-report-form select,
+    #resident-report-form textarea {
+        font-size: 14px;
+    }
+
+    #resident-report-form button {
+        width: 100%;
+    }
+        /* Profile Section */
+    .profile-section {
+        padding: 20px;
+    }
+
+    .profile-section h2 {
+        font-size: 20px;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .profile-item {
+        padding: 15px;
+    }
+        /* Dashboard Header */
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-header .btn {
+        width: 100%;
+        text-align: center;
+    }
+        /* Sidebar Navigation */
+    .sidebar-nav {
+        gap: 6px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .logout {
+        display: inline-block;
+        width: 100%;
+        margin-top: auto;
+        padding: 15px;
+        border-top: 1px solid #365344;
+    }
+        /* MOBILE HAMBURGER MENU */
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar-nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .sidebar-nav.active {
+        display: flex;
+    }
+    .sidebar .logout {
+    display: none;
+}
+
+.sidebar:has(.sidebar-nav.active) .logout {
+    display: block;
+}
 }

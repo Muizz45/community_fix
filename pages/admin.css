@@ -124,6 +124,7 @@ a {
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #e4ebe6;
+    overflow-x: auto;
 }
 
 .recent-reports h2 {
@@ -230,4 +231,116 @@ td {
     background-color: #d1fae5;
     color: #065f46;
 }
+
+/* ADMIN DASHBOARD MOBILE VIEW */
+
+@media (max-width: 768px) {
+
+    /* Dashboard layout */
+    .admin-dashboard {
+        flex-direction: column;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+   .logout {
+    margin-top: 15px;
+    display: inline-block;
+    width: fit-content;
+    background-color: #176b45;
+    border-radius: 7px;
+    padding: 12px 20px;
+}
+
+    /* Main content */
+    .main-content {
+        padding: 20px;
+        min-width: 0;
+    }
+
+    /* Dashboard heading */
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    /* Statistics cards */
+    .stats-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+
+    .stat-card h3 {
+        font-size: 13px;
+    }
+
+    .stat-card p {
+        font-size: 25px;
+    }
+}
+    /* Mobile tables */
+    .recent-reports {
+        padding: 18px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+        white-space: nowrap;
+    }
+
+    .recent-reports h2 {
+        font-size: 20px;
+    }
+    
+    /* Assignment Form */
+    .assignment-form {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .assignment-form h2 {
+        font-size: 20px;
+    }
+
+    .assignment-form p {
+        font-size: 14px;
+    }
+
+    .assignment-form select {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .assignment-form button {
+        width: 100%;
+        padding: 14px;
+    }
+
 
