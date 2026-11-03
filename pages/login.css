@@ -6,15 +6,28 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7faf8;
+    /* background: linear-gradient(
+        rgba(0, 70, 35, 0.35),
+        rgba(0, 70, 35, 0.35)
+    ),
+     linear-gradient(
+        to right,
+        #008751 33.33%,
+        #ffffff 33.33%,
+        #ffffff 66.66%,
+        #008751 66.66%
+    ); */
     color: #202b25;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
+
 
 /* LOGIN CONTAINER */
 .login-container {
@@ -111,4 +124,15 @@ form button:hover {
     text-align: center;
     margin-top: 18px;
     font-size: 14px;
+}
+@media (max-width: 500px) {
+    .login-container {
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 22px;
+    }
+
+    .login-header h2 {
+        font-size: 23px;
+    }
 }
